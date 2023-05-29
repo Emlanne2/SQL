@@ -1,0 +1,42 @@
+-Create a crystal shop database
+
+
+CREATE TABLE crystals (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, color TEXT);
+
+INSERT INTO crystals VALUES (1, "fluorite", 3, 30, "Blue");
+INSERT INTO crystals VALUES (2, "Rose Quartz", 4, 3, "Pink");
+INSERT INTO crystals VALUES (3, "Diamond", 4, 25, "Clear");
+INSERT INTO crystals VALUES (4, "Tourmaline", 5, 30, "Black");
+INSERT INTO crystals VALUES (5, "Agate", 6, 30, "Blue");
+INSERT INTO crystals VALUES (6, "Citrine", 7, 50, "Yellow");
+INSERT INTO crystals VALUES (7, "Smoky Quartz", 8, 30, "Gray");
+INSERT INTO crystals VALUES (8, "Amethyst", 9, 15, "Purple");
+INSERT INTO crystals VALUES (9, "Moss Agate", 10, 15, "Green");
+INSERT INTO crystals VALUES (10, "Lapis Lazuli", 11, 25, "Blue" );
+INSERT INTO crystals VALUES (11, "Tiger's Eye", 12, 25, "Brown");
+INSERT INTO crystals VALUES (12, "Emerald", 13, 25, "Green");
+INSERT INTO crystals VALUES (13, "Angelite", 14, 30, "Blue");
+INSERT INTO crystals VALUES (14, "Saphire", 15, 30, "Blue");
+INSERT INTO crystals VALUES (15, "Quartz", 16, 30, "Clear");
+
+
+-display the database ordered by price
+SELECT * FROM crystals ORDER BY price;
+
+-display the database ordered by quantity 
+SELECT * FROM crystals GROUP BY quantity;
+
+-What is the total sum of the crystals?
+SELECT SUM (quantity) FROM crystals;
+
+
+
+
+
+
+
+
+
+
+
+
